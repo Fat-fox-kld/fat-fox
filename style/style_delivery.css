@@ -1,0 +1,48 @@
+.container {
+  text-align: center;
+}
+
+main h2 {
+  margin-top: 30px;
+}
+
+main p {
+  text-align: justify;
+  text-indent: 2em;
+  line-height: 1.3em;
+}
+
+main table {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 35px;
+  border: 2px solid #edddcc;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+main th,
+main td {
+  border: 2px solid #edddcc;
+  padding: 10px 25px;
+}
+
+main th {
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+main table .fix_width {
+  width: 250px;
+}
+
+main table .title {
+  color: #e87a3f;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+main tr:hover:not(:nth-child(6n + 2)) {
+  background-color: #e87a3f;
+}

@@ -1,0 +1,175 @@
+.reviews_text {
+  margin-top: 30px;
+}
+
+.reviews_text p {
+  text-align: justify;
+  text-indent: 2em;
+  line-height: 1.3em;
+}
+
+.reviews_text h2 {
+  text-align: center;
+}
+
+.reviews .btn_contact {
+  float: right;
+  margin: 30px 0 40px;
+}
+
+.reviews .btn_contact:hover {
+  background-color: #edddcc;
+}
+
+.reviews .btn_contact:active {
+  color: gray;
+}
+
+.reviews_form {
+  text-align: left;
+}
+
+.reviews_form h2 {
+  text-align: center;
+}
+
+.reviews_form p {
+  margin-bottom: 30px;
+  text-align: justify;
+  text-indent: 2em;
+  line-height: 1.3em;
+}
+
+.comment_field {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  background-color: #edddcc;
+}
+
+.comment_field .comment {
+  float: left;
+  position: relative;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 30px 58px 10px 0;
+  padding: 10px 25px;
+  width: 380px;
+  transition-duration: 0.5s;
+  background-color: #edddcc;
+}
+
+.comment_field .comment:hover {
+  background-color: white;
+}
+
+.comment_field .comment:nth-child(2n) {
+  margin-right: 0;
+}
+
+.comment_field .comment .name {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.comment_field .comment .name::before {
+  content: "";
+  display: block;
+  background: url("../img/r_left.svg") no-repeat 50% 50%;
+  position: absolute;
+  left: 35px;
+  top: 61px;
+  width: 50px;
+  height: 50px;
+}
+
+.comment_field .comment .name::after {
+  content: "";
+  position: absolute;
+  right: 17px;
+  bottom: 22px;
+  display: block;
+  background: url("../img/r_right.svg") no-repeat 50% 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.comment_field .comment .text {
+  padding: 15px 50px 10px 70px;
+  line-height: 1.3em;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.comment_field .comment .text::first-letter {
+  text-transform: uppercase;
+}
+
+.reviews_feedback {
+  padding-top: 20px;
+}
+
+.reviews_form label {
+  display: inline-block;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.reviews_form input[type="text"],
+.reviews_form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  padding: 7px 15px;
+  margin: 5px 0 10px;
+  font: inherit;
+  color: inherit;
+  border: 2px solid #edddcc;
+  border-radius: 8px;
+}
+
+.reviews_form input[type="text"] {
+  margin-bottom: 30px;
+}
+
+.reviews_form input[type="text"]:hover,
+.reviews_form textarea:hover {
+  border-color: #e87a3f;
+}
+
+.reviews_form input[type="text"]:focus,
+.reviews_form textarea:focus {
+  border-color: #e87a3f;
+  background-color: #edddcc;
+}
+
+.reviews_form textarea {
+  display: block;
+  min-height: 120px;
+}
+
+.reviews_form input[type="reset"],
+.reviews_form input[type="submit"] {
+  color: inherit;
+  font: inherit;
+  font-weight: bold;
+  margin-left: 20px;
+  padding: 10px 15px;
+  border: 2px solid #edddcc;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.reviews_form input[type="reset"]:hover,
+.reviews_form input[type="submit"]:hover {
+  background-color: #edddcc;
+}
+
+.reviews_form input[type="reset"]:active,
+.reviews_form input[type="submit"]:active {
+  color: gray;
+}
+
+.reviews_form .button_right {
+  text-align: right;
+  margin-bottom: 35px;
+}

@@ -1,0 +1,94 @@
+main h2,
+main p {
+  text-align: center;
+}
+
+main p {
+  margin-bottom: 30px;
+}
+
+.catalog_items {
+  margin: 30px 0;
+}
+
+main ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+main li {
+  float: left;
+  margin: 0 18px 18px 0;
+}
+
+main li:nth-child(2n) {
+  margin-right: 0;
+}
+
+.item {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  display: block;
+  border: 2px solid black;
+  width: 450px;
+  height: 450px;
+  border: 2px solid #edddcc;
+  border-radius: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  overflow: hidden;
+  width: 450px;
+  height: 450px;
+}
+
+.link img {
+  display: block;
+  transition-duration: 0.75s;
+  transition-timing-function: ease;
+}
+
+.link:hover img {
+  transform: translate(450px);
+
+}
+
+.link::after,
+.link::before {
+  position: absolute;
+  width: 410px;
+  text-align: center;
+  padding: 30px 20px;
+  transition-duration: 0.75s;
+  transition-timing-function: ease;
+  transform: translateX(-225px);
+  line-height: 1.3em;
+  z-index: -1;
+}
+
+.link::before {
+  content: attr(data-title);
+  top: 100px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #e87a3f;
+}
+
+.link::after {
+  content: attr(data-description);
+  font-size: 20px;
+  height: 230px;
+  top: 150px;
+  background: url('../img/i_sign.svg') no-repeat 50% 180px;
+  background-size: 50px;
+}
+
+.link:hover::before,
+.link:hover::after {
+  transform: translate(0);
+}
