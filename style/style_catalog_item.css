@@ -1,0 +1,63 @@
+main h2 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+main .catalog_item {
+  width: 922px;
+  margin: 30px 0;
+  border: 2px solid #edddcc;
+  border-radius: 8px;
+  transition-duration: 0.5s;
+}
+
+main .catalog_item:hover {
+  background-color: #edddcc;
+}
+
+main .catalog_item:last-child {
+  margin-bottom: 50px;
+}
+
+main .item_img {
+  float: left;
+  width: 344px;
+  height: 350px;
+  padding: 20px 50px;
+  border-right: 2px solid #edddcc;
+}
+
+main .catalog_item:hover .item_img {
+  border-right-color: #fff;
+}
+
+main .item {
+  width: 376px;
+  height: 350px;
+  padding: 20px 50px;
+  float: left;
+}
+
+main .item h3 {
+  text-align: center;
+  margin: 50px 0 30px 0;
+  padding: 0;
+}
+
+main .item p {
+  text-align: center;
+  line-height: 1.3em;
+}
+
+main .item p:last-child {
+  margin-top: 30px;
+}
+
+main .item .price {
+  font-size: 30px;
+  color: #e87a3f;
+}
+
+main .item a {
+  color: inherit;
+}
